@@ -1,0 +1,44 @@
+{
+    "name": "joolanders/flysystem-aws-s3-small",
+    "description": "Flysystem adapter for S3 without using the full AWS SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniele Rosario",
+            "email": "daniele@zoolanders.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "league/flysystem": "^1.0.40",
+        "akeeba/s3": "dev-master"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^2.0.0",
+        "henrikbjorn/phpspec-code-coverage" : "~1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Joolanders\\Flysystem\\S3Small\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Joolanders\\Flysystem\\S3Small\\Stub\\": "stub"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:akeeba/s3.git"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
